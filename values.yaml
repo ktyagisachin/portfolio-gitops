@@ -1,0 +1,13 @@
+replicaCount: 3
+
+image:
+  repository: ktyagisachin/portfolio
+  tag: v1
+  pullPolicy: IfNotPresent
+
+imagePullSecrets:
+  - name: dockerhub-secret
+
+service:
+  type: ClusterIP
+  port: 80
